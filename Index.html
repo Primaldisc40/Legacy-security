@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGACY s.r.o. – SBS služby</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #ddd;
+    }
+
+    /* === HLAVNÝ BANER === */
+    header {
+      text-align: center;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+      background: linear-gradient(145deg, #222, #444);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffcc00;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+    }
+
+    /* Hlavný banner */
+    .banner {
+      display: block;
+      margin: 20px auto;
+      width: 700px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 10px 0;
+      color: #ffcc00;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    /* === MENU === */
+    nav {
+      background-color: #000;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #ffcc00;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background-color: #222;
+    }
+
+    /* === HLAVNÁ ČASŤ === */
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .sluzby {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      background-color: #1b1b1b;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 calc(33% - 20px);
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255,204,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    /* Obrázky služieb */
+    .card img {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    a.tel {
+      color: #ffcc00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.tel:hover {
+      color: #fff;
+    }
+
+    @media(max-width: 768px){
+      .sluzby {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+      .banner {
+        width: 95%;
+        height: auto;
+      }
+      .card img {
+        width: 95%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <div class="logo">
+  <img src="Logo.svg" alt="Logo LEGACY s.r.o.">
+</div>
+    <img src="Baner.jpeg" alt="Baner SBS služby" class="banner">
+    <h1>Ochrana Vás a Vášho majetku</h1>
+    <p>Profesionálne SBS služby – diskrétne, spoľahlivo, 24/7</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Domov</a>
+    <a href="onas.html">O nás</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="pracovne-ponuky.html">Pracovné ponuky</a>
+    <a href="#kontakt">Kontakt</a>
+	<a href="Úlohy.html">Úlohy</a>
+  </nav>
+  <main>
+    <section id="onas">
+      <h2>O nás</h2>
+      <p>LEGACY s.r.o. je profesionálna súkromná bezpečnostná služba (SBS), ktorá sa špecializuje na ochranu osôb, majetku a VIP klientov. Náš tím má skúsenosti z armády, polície a elitných bezpečnostných jednotiek. Diskrétnosť a spoľahlivosť sú našimi hlavnými hodnotami.</p>
+    </section>
+
+    <section id="sluzby">
+      <h2>Naše služby</h2>
+      <div class="sluzby">
+        <div class="card">
+          <img src="vip_transport.jpeg" alt="VIP transport">
+          <h3>VIP služby</h3>
+          <p>Bezpečnostný transport VIP klientov, napríklad v Toyota RAV4, s profesionálnou ochranou a taktickou jazdou.</p>
+        </div>
+        <div class="card">
+          <img src="ochrana_majetku.jpeg" alt="Ochrana majetku">
+          <h3>Ochrana majetku</h3>
+          <p>Neustála stráž budov, objektov a areálov. Profesionálni strážnici vybavení baterkami a modernou technikou.</p>
+        </div>
+        <div class="card">
+          <img src="sbs_sluzby.jpeg" alt="SBS služby">
+          <h3>Bežné SBS služby</h3>
+          <p>Fyzická ostraha, mobilné hliadky, recepčné služby a Pult centrálnej ochrany (PCO).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>📞 Telefón: <a class="tel" href="tel:+421944823274">0944 823 274</a></p>
+      <p>📧 Email: <strong>Lukinoabc@azet.sk</strong></p>
+      <p>📍 Adresa: Nižná Rybnica, Slovenská republika</p>
+    </section>
+  </main>
+
+  <footer>
+  Lukáš Legát MLD_BOvLD_Bc_E_2023_sk, dátum spracovania stranky: 2.11.2025© 2025 LEGACY s.r.o. | Profesionálna SBS služba | Všetky práva vyhradené
+  </footer>
+
+</body>
+</html>
